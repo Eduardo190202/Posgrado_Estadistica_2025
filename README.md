@@ -14,3 +14,5 @@ Semana 1 (o7/o8/2025): inicio del curso :fire:
 +cuarta
 +quinta
 +sexta
++septima
++octaba
