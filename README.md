@@ -17,3 +17,8 @@ Semana 1 (o7/o8/2025): inicio del curso :fire:
 +septima
 +octaba
 +novena
+
+Semana 2 (14/o8/2025): Laboratorio
+
+
+semana 3 (21/08/2025)
