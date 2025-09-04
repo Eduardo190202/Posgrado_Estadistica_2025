@@ -27,3 +27,14 @@ abline(h=mean(setosa$Sepal.Length),col="red")
 mean(setosa$Sepal.Length)
 
 
+#setosa
+
+setosa <- subset(iris,Species=="setosa")
+mean(setosa$Sepal.Width)
+
+#mu=3.9
+
+#H0 LA DIFERENCIA ENTRE LAS MEDIAS ES 0 O MENOR A 0 IGUAL A 3.9
+#H1 LA DIFERENCIA ENTRE LA MEDIA TORETICA Y EXPERIMENTAL ES DIFERENTE A 0 = 3.9
+
+t.test(setosa$Sepal.Width,mu=3.9)
