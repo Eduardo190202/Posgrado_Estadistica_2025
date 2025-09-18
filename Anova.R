@@ -48,3 +48,27 @@ tapply(crop$yield,crop$fertilizer,mean)
 
 #primer diferencia de media f1vsf3 hay dif
 176.7570-177.3562
+
+
+
+
+
+# Prueba de tukey
+
+sqrt((2*0.3859)/32)*qtukey(0.95, nmeans=3, df=93)
+
+TukeyHSD(crop.aov)
+plot(TukeyHSD(crop.aov))
+
+
+install.packages("agricolae")
+library(agricolae)
+lsd <- LSD.test(crop.aov, "crop$fertilizer", p.adj = "none")
+print(lsd)
+
+library(ggplot2)
+ggplot(crop, aes(x = fertilizer, y = yield, fill = fertilizer)) +
+  geom_violin(trim = FALSE, alpha = 0.6) +
+  geom_jitter(width = 0.1, alpha = 0.7) +
+  geom_boxplot(width = 0.1, fill = "white", outlier.shape = NA) 
+  theme_light()
