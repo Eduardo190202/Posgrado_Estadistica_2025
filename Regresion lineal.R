@@ -36,3 +36,11 @@ fit.lm$model
 fit.lm$coefficients
 fit.lm$residuals
 mean(fit.lm$residuals)
+
+#se suma por que el valor de b1 es negativo y se debe restar 
+datos$yprima <-( bo+b1)*datos$trigo
+datos$yprima 
+datos$residuales <- datos$harina-datos$yprima
+SSE <- sum(datos$residuales**2)
+SSE/8
+sqrt(SSE/8)
