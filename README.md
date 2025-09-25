@@ -30,3 +30,5 @@ semana 5 (04/09/2025): Media Movil
 semana 6 sin clase 
 
 semana 7 (18/09/2025): Analisis de varianza 
+
+semana 8 (25/09/2025):Regresion lineal
